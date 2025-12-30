@@ -188,16 +188,37 @@
         </div>
       </div>
 
-      <!-- Sub-Nav for Onboarding (Anchors) -->
-      <div id="onboarding-nav" class="w-full border-t border-slate-100 bg-slate-50/50">
-          <div class="max-w-7xl mx-auto px-4 py-2 flex gap-4 md:gap-8 text-xs font-semibold text-slate-500 justify-start md:justify-center overflow-x-auto custom-scrollbar">
+      <!-- Sub-Nav Container -->
+      <div class="w-full border-t border-slate-100 bg-slate-50/50">
+          
+          <!-- Onboarding Links -->
+          <div id="onboarding-nav" class="max-w-7xl mx-auto px-4 py-2 flex gap-4 md:gap-8 text-xs font-semibold text-slate-500 justify-start md:justify-center overflow-x-auto custom-scrollbar">
             <a href="#identity" class="hover:text-blue-800 transition whitespace-nowrap">Identity</a>
             <a href="#work-ways" class="hover:text-blue-800 transition whitespace-nowrap">Our Flexibility</a>
             <a href="#cycle" class="hover:text-blue-800 transition whitespace-nowrap">The Cycle</a>
             <a href="#reputation" class="hover:text-blue-800 transition whitespace-nowrap">Reputation</a>
             <a href="#toolkit" class="hover:text-blue-800 transition whitespace-nowrap">Toolkit</a>
           </div>
-          <!-- Progress Bar -->
+
+          <!-- Client Requests Links (Initially Hidden) -->
+          <div id="client-requests-nav" class="hidden max-w-7xl mx-auto px-4 py-2 flex gap-4 md:gap-8 text-xs font-semibold text-slate-500 justify-start md:justify-center overflow-x-auto custom-scrollbar">
+            <a href="#client-philosophy" class="hover:text-blue-800 transition whitespace-nowrap">Philosophy</a>
+            <a href="#brief-template" class="hover:text-blue-800 transition whitespace-nowrap">Master Template</a>
+            <a href="#real-examples" class="hover:text-blue-800 transition whitespace-nowrap">Real Examples</a>
+            <a href="#gauntlet" class="hover:text-blue-800 transition whitespace-nowrap">The Gauntlet</a>
+          </div>
+
+          <!-- Sourcing Links (Initially Hidden) -->
+          <div id="sourcing-nav" class="hidden max-w-7xl mx-auto px-4 py-2 flex gap-4 md:gap-8 text-xs font-semibold text-slate-500 justify-start md:justify-center overflow-x-auto custom-scrollbar">
+            <a href="#why-source" class="hover:text-blue-800 transition whitespace-nowrap">Why Source?</a>
+            <a href="#boolean-logic" class="hover:text-blue-800 transition whitespace-nowrap">Boolean Logic</a>
+            <a href="#linkedin-recruiter" class="hover:text-blue-800 transition whitespace-nowrap">Recruiter Corp</a>
+            <a href="#xray-search" class="hover:text-blue-800 transition whitespace-nowrap">X-Ray Search</a>
+            <a href="#tracking" class="hover:text-blue-800 transition whitespace-nowrap">Tracking</a>
+            <a href="#ats-vault" class="hover:text-blue-800 transition whitespace-nowrap">ATS</a>
+          </div>
+
+          <!-- Global Progress Bar -->
           <div class="w-full bg-slate-200 h-0.5 mt-0">
             <div class="bg-gradient-to-r from-blue-900 to-blue-500 h-0.5 w-0 transition-all duration-300" id="scrollProgress"></div>
           </div>
@@ -941,7 +962,7 @@
         </header>
 
         <!-- SECTION: The "Why" (Inspiration) -->
-        <section class="py-16 bg-slate-50 border-b border-slate-200">
+        <section id="client-philosophy" class="py-16 bg-slate-50 border-b border-slate-200">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-slate-900">Why Summarize?</h2>
@@ -991,7 +1012,7 @@
         </section>
 
         <!-- SECTION 1: The Master Template (Design Refresh) -->
-        <section class="py-16 bg-white">
+        <section id="brief-template" class="py-16 bg-white">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="flex items-center justify-between mb-8">
                     <h2 class="text-2xl font-bold text-slate-900">The Master Template</h2>
@@ -1110,7 +1131,7 @@
         </section>
 
         <!-- SECTION 2: Real World Examples -->
-        <section class="py-16 bg-slate-50 border-t border-slate-200">
+        <section id="real-examples" class="py-16 bg-slate-50 border-t border-slate-200">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-slate-900">Real-World Examples</h2>
@@ -1214,7 +1235,7 @@
         </section>
 
         <!-- SECTION 3: The Gauntlet (Practice Task) -->
-        <section class="py-16 bg-slate-900 text-white border-t border-slate-800">
+        <section id="gauntlet" class="py-16 bg-slate-900 text-white border-t border-slate-800">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="text-center mb-12">
                     <div class="inline-flex items-center gap-2 bg-yellow-500/20 border border-yellow-500/30 rounded-full px-3 py-1 mb-4">
@@ -1495,7 +1516,7 @@
         </header>
     
         <!-- Section: Why Source? -->
-        <section class="py-16 bg-white border-b border-slate-200">
+        <section id="why-source" class="py-16 bg-white border-b border-slate-200">
             <div class="max-w-6xl mx-auto px-4">
                  <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-slate-900">Why Sourcing Matters</h2>
@@ -1533,7 +1554,7 @@
         </section>
     
         <!-- Section: Efficiency / Boolean Logic -->
-        <section class="py-16 bg-slate-50">
+        <section id="boolean-logic" class="py-16 bg-slate-50">
             <div class="max-w-5xl mx-auto px-4">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-bold text-slate-900">Efficiency: Speak the Machine's Language</h2>
@@ -1604,7 +1625,7 @@
         </section>
 
         <!-- NEW SECTION: LinkedIn Recruiter (Corporate) -->
-        <section class="py-16 bg-white border-t border-slate-200">
+        <section id="linkedin-recruiter" class="py-16 bg-white border-t border-slate-200">
             <div class="max-w-5xl mx-auto px-4">
                 <div class="flex flex-col md:flex-row items-center gap-12">
                     <div class="md:w-1/2">
@@ -1690,7 +1711,7 @@
         </section>
 
         <!-- NEW SECTION: X-Ray Search -->
-        <section class="py-16 bg-white border-t border-slate-200">
+        <section id="xray-search" class="py-16 bg-white border-t border-slate-200">
             <div class="max-w-5xl mx-auto px-4">
                 <div class="flex flex-col md:flex-row items-start gap-12">
                     <div class="md:w-1/2">
@@ -1746,7 +1767,7 @@
         </section>
 
         <!-- NEW SECTION: Tracking / Google Sheets -->
-        <section class="py-16 bg-slate-50 border-t border-slate-200">
+        <section id="tracking" class="py-16 bg-slate-50 border-t border-slate-200">
             <div class="max-w-5xl mx-auto px-4 text-center">
                 <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
                     <i data-lucide="table" class="w-3 h-3"></i> Best Practice
@@ -1784,7 +1805,7 @@
         </section>
 
         <!-- NEW SECTION: Teamtailor ATS -->
-        <section class="py-16 bg-white border-t border-slate-200">
+        <section id="ats-vault" class="py-16 bg-white border-t border-slate-200">
             <div class="max-w-5xl mx-auto px-4">
                 <div class="flex flex-col md:flex-row-reverse items-center gap-12">
                     <div class="md:w-1/2">
@@ -1901,13 +1922,18 @@
               selectedBtn.classList.add('active');
           }
 
-          // 5. Handle Sub-nav visibility (Only for Onboarding)
-          const subNav = document.getElementById('onboarding-nav');
-          if (tabId === 'onboarding') {
-              subNav.classList.remove('hidden');
-          } else {
-              subNav.classList.add('hidden');
-          }
+          // 5. Toggle Sub-navs
+          const navs = ['onboarding-nav', 'client-requests-nav', 'sourcing-nav'];
+          navs.forEach(navId => {
+              const navEl = document.getElementById(navId);
+              if(navEl) {
+                  if (navId === tabId + '-nav') {
+                      navEl.classList.remove('hidden');
+                  } else {
+                      navEl.classList.add('hidden');
+                  }
+              }
+          });
 
           // 6. Reset Scroll to top
           window.scrollTo(0, 0);
