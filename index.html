@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KK People</title>
+    <title>KK People | Intern Onboarding</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- FontAwesome -->
@@ -45,6 +45,7 @@
         background-color: transparent;
         perspective: 1000px;
         height: 220px;
+        cursor: pointer;
       }
       .flip-card-inner {
         position: relative;
@@ -55,7 +56,7 @@
         transform-style: preserve-3d;
       }
       
-      /* Only enable hover flip on devices that actually have a cursor */
+      /* Only enable hover flip on devices that actually have a cursor, otherwise click */
       @media (hover: hover) {
         .flip-card:hover .flip-card-inner {
           transform: rotateY(180deg);
@@ -1636,6 +1637,7 @@
                         <p class="text-slate-600 leading-relaxed mb-6">
                             This is your cockpit. Unlike the free version, <strong>Recruiter Corporate</strong> gives you total visibility into the entire LinkedIn network (800M+ members), not just your connections.
                         </p>
+
                         <ul class="space-y-4">
                             <li class="flex items-start gap-3">
                                 <div class="bg-blue-50 text-blue-600 p-2 rounded-lg flex-shrink-0">
@@ -1708,6 +1710,88 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- NEW SECTION: Specialized Platforms (Behance & GitHub) -->
+        <section id="specialized-platforms" class="py-16 bg-slate-50 border-t border-slate-200">
+          <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold text-slate-900">Beyond LinkedIn: Specialized Hunting Grounds</h2>
+              <p class="text-slate-500 mt-2 max-w-2xl mx-auto">
+                Generalists use LinkedIn. Specialists hang out where their work lives.
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Behance Card -->
+              <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-lg transition-all duration-300">
+                <div class="bg-[#1769ff] p-6 flex justify-between items-center text-white">
+                   <div class="flex items-center gap-3">
+                     <i class="fa-brands fa-behance text-3xl"></i>
+                     <span class="font-bold text-xl tracking-tight">Behance</span>
+                   </div>
+                   <span class="bg-white/20 text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm">Creatives</span>
+                </div>
+                <div class="p-8">
+                  <h3 class="text-xl font-bold text-slate-900 mb-4">Why it's the Holy Grail for Designers</h3>
+                  <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                    On LinkedIn, a "Senior Designer" is just a text title. On Behance, you see the truth. 
+                    For creative roles (UI/UX, Branding, Motion), <strong>portfolios are the only currency that matters</strong>.
+                  </p>
+                  <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                       <div class="bg-blue-50 text-blue-600 p-1.5 rounded-lg shrink-0 mt-0.5"><i data-lucide="eye" class="w-4 h-4"></i></div>
+                       <div>
+                         <strong class="block text-sm text-slate-900">Visual Proof</strong>
+                         <p class="text-xs text-slate-500">Don't guess their style. See it instantly.</p>
+                       </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                       <div class="bg-blue-50 text-blue-600 p-1.5 rounded-lg shrink-0 mt-0.5"><i data-lucide="layers" class="w-4 h-4"></i></div>
+                       <div>
+                         <strong class="block text-sm text-slate-900">Process Breakdowns</strong>
+                         <p class="text-xs text-slate-500">Good profiles show *how* they solved the problem, not just the final image.</p>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-lg transition-all duration-300">
+                <div class="bg-[#181717] p-6 flex justify-between items-center text-white">
+                   <div class="flex items-center gap-3">
+                     <i class="fa-brands fa-github text-3xl"></i>
+                     <span class="font-bold text-xl tracking-tight">GitHub</span>
+                   </div>
+                   <span class="bg-white/20 text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm">Tech / Devs</span>
+                </div>
+                <div class="p-8">
+                  <h3 class="text-xl font-bold text-slate-900 mb-4">Why it's Essential for Technical Roles</h3>
+                  <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                    Resumes list buzzwords; GitHub shows the code. For developers, this is their workshop. 
+                    It reveals <strong>passion, consistency, and actual coding ability</strong> beyond the CV claims.
+                  </p>
+                  <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                       <div class="bg-slate-100 text-slate-700 p-1.5 rounded-lg shrink-0 mt-0.5"><i data-lucide="code-2" class="w-4 h-4"></i></div>
+                       <div>
+                         <strong class="block text-sm text-slate-900">Code Quality</strong>
+                         <p class="text-xs text-slate-500">Is their code clean? Do they comment? Do they contribute to Open Source?</p>
+                       </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                       <div class="bg-slate-100 text-slate-700 p-1.5 rounded-lg shrink-0 mt-0.5"><i data-lucide="activity" class="w-4 h-4"></i></div>
+                       <div>
+                         <strong class="block text-sm text-slate-900">Activity Graph</strong>
+                         <p class="text-xs text-slate-500">Green squares don't lie. It shows if they code for fun/passion, not just 9-5.</p>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- NEW SECTION: X-Ray Search -->
@@ -1817,6 +1901,7 @@
                             Google Sheets is for your personal speed. <strong>Teamtailor</strong> is the company's memory. <br>
                             Once a candidate shows interest, they must be migrated to the ATS. This ensures compliance, avoids duplicate outreach, and keeps the pipeline visible to stakeholders.
                         </p>
+
                         <ul class="space-y-4">
                             <li class="flex items-start gap-3">
                                 <div class="w-6 h-6 bg-pink-50 text-pink-600 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">1</div>
